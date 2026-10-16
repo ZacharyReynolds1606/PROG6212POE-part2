@@ -11,3 +11,9 @@ Controller actions accept typed request bodies so POST and PUT endpoints show re
 Category routes follow a consistent pattern to avoid duplicate path segments. Events, enrolments, and results follow similar RESTful routing conventions.
 Connection strings and secrets should be moved to environment variables or user secrets for security. Do not commit sensitive credentials to source control.
 Controller methods currently return placeholder Ok responses and need business logic. Implement services and DbContext usage to persist data and handle validation.
+Add model validation using data annotations or a validation library to enforce required fields. Validation improves API correctness and Swagger documentation.
+Add ProducesResponseType attributes to controllers to document status codes and response shapes. This makes generated documentation clearer for consumers.
+Run migrations with dotnet ef database update to create or update the database schema. Keep migrations in source control and apply them during deployment.
+Tests are present in the RaceDay.Api.Tests project and should be run frequently. Use dotnet test to execute unit and integration tests locally.
+For contributions, fork, create a branch, and open a pull request with tests and description of changes. Follow code conventions and include migration updates if needed.
+The project aims to be reliable, secure, and easy to integrate with web or mobile clients. Focus next on implementing core business flows, validation, and comprehensive tests.
