@@ -9,3 +9,4 @@ To run locally, build the solution and trust the dev certificate using dotnet de
 Swagger JSON is available at /swagger/v1/swagger.json. The UI lets you view models and send test requests directly from the browser.
 Controller actions accept typed request bodies so POST and PUT endpoints show request models. This makes it easy to craft payloads in Swagger for testing.
 Category routes follow a consistent pattern to avoid duplicate path segments. Events, enrolments, and results follow similar RESTful routing conventions.
+Connection strings and secrets should be moved to environment variables or user secrets for security. Do not commit sensitive credentials to source control.
