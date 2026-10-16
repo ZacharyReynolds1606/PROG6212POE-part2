@@ -7,3 +7,4 @@ The project uses Entity Framework Core for persistence and migrations. The datab
 Development launch settings bind both HTTP and HTTPS ports to avoid redirect issues. The development TLS certificate must be trusted locally for HTTPS to work.
 To run locally, build the solution and trust the dev certificate using dotnet dev-certs https --trust. Then run the API using the https launch profile.
 Swagger JSON is available at /swagger/v1/swagger.json. The UI lets you view models and send test requests directly from the browser.
+Controller actions accept typed request bodies so POST and PUT endpoints show request models. This makes it easy to craft payloads in Swagger for testing.
